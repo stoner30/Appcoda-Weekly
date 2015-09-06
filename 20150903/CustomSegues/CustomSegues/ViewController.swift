@@ -33,6 +33,11 @@ class ViewController: UIViewController {
                     
                 })
                 return unwindSegue
+            } else if id == "idSecondSegueUnwind" {
+                let unwindSegue = SecondCustomSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
+                
+                })
+                return unwindSegue
             }
         }
         
@@ -51,7 +56,13 @@ class ViewController: UIViewController {
             UIView.animateWithDuration(1.0, animations: { () -> Void in
                 self.view.backgroundColor = originalColor
             }, completion: nil)
+        } else {
+            self.lblMessage.text = "Welcome back!"
         }
+    }
+    
+    @IBAction func showThirdViewController(sender: AnyObject!) {
+        self.performSegueWithIdentifier("idSecondSegue", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
