@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ItemsTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
+class ItemsTableViewController: UITableViewController, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
 
     let items: [String] = ["Item 01", "Item 02", "Item 03", "Item 04", "Item 05"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,6 +54,22 @@ class ItemsTableViewController: UITableViewController, UIViewControllerTransitio
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return customDismissAnimationController
+    }
+    
+    let customNavigationAnimationController = CustomNavigationAnimationController()
+    let customInteractionController = CustomInteractionController()
+    
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if operation == .Push {
+            customInteractionController.attachToViewController(toVC)
+        }
+        
+        customNavigationAnimationController.reverse = operation == .Pop
+        return customNavigationAnimationController
+    }
+    
+    func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return customInteractionController.transitionInProgress ? customInteractionController : nil
     }
 
 }

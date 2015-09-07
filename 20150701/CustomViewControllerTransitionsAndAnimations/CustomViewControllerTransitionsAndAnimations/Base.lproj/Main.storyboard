@@ -31,6 +31,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="fvk-qK-Ixu" kind="push" id="zeV-Q1-1yA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -90,6 +93,7 @@
                             <constraint firstItem="XSz-Qi-sMZ" firstAttribute="top" secondItem="bLe-yd-3kI" secondAttribute="topMargin" id="Tci-rM-kyW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fPx-py-FTR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INm-xY-vbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,4 +121,7 @@
     <resources>
         <image name="image" width="768" height="1024"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jme-yX-oij"/>
+    </inferredMetricsTieBreakers>
 </document>
