@@ -143,6 +143,9 @@
                                         <integer key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="login:" destination="RIx-kj-ici" eventType="touchUpInside" id="DFX-zN-ecj"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lse-eu-8RK">
                                 <rect key="frame" x="20" y="151" width="280" height="30"/>
@@ -165,6 +168,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Example I" id="nLu-6p-9eK"/>
+                    <connections>
+                        <outlet property="centerAlignPassword" destination="7CN-Dt-Twf" id="Sgb-BN-KEV"/>
+                        <outlet property="centerAlignUsername" destination="ktB-Wx-NAc" id="ehf-q1-6tC"/>
+                        <outlet property="loginButton" destination="NKi-Nf-yYJ" id="YTD-KU-790"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lW3-EQ-BzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
