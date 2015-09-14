@@ -7,5 +7,7 @@
     * ViewAnimationsDemo: 以Swift建立简单的视图动画
 * 20150702
     * MPCRevisited: 使用多点连线（MPC）框架与Swift打造聊天App
+* 20150704
+    * QRReaderDemo: 如何使用AVFoundation进行QR Code扫描
 * 20150903
     * CustomSegues: 如何使用自定Segue实现视图转场动画
