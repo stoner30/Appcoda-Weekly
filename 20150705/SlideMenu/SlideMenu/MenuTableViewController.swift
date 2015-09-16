@@ -38,5 +38,12 @@ class MenuTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let menuTableViewController = segue.sourceViewController as? MenuTableViewController
+        if let selectedRow = menuTableViewController?.tableView.indexPathForSelectedRow?.row {
+            currentItem = menuItems[selectedRow]
+        }
+    }
 
 }

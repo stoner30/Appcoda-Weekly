@@ -8,8 +8,10 @@
 
 import UIKit
 
-class NewsTableViewController: UITableViewController {
+class NewsTableViewController: UITableViewController, MenuTransitionManagerDelegate {
 
+    var menuTransitionManager = MenuTransitionManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,10 +21,6 @@ class NewsTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    func dismiss() {
-        dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func unwindToHome(sender: UIStoryboardSegue) {
@@ -65,6 +63,18 @@ class NewsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        self.menuTransitionManager.delegate = self
+        if let menuTableViewController = segue.destinationViewController as? MenuTableViewController {
+            menuTableViewController.currentItem = self.title!
+            menuTableViewController.transitioningDelegate = menuTransitionManager
+        }
+    }
+
+    func dismiss() {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

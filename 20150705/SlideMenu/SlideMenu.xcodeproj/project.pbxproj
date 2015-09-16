@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AC30F15E1BA66A1100445878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F15D1BA66A1100445878 /* AppDelegate.swift */; };
-		AC30F1601BA66A1100445878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F15F1BA66A1100445878 /* ViewController.swift */; };
 		AC30F1631BA66A1100445878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30F1611BA66A1100445878 /* Main.storyboard */; };
 		AC30F1651BA66A1100445878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC30F1641BA66A1100445878 /* Assets.xcassets */; };
 		AC30F1681BA66A1100445878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30F1661BA66A1100445878 /* LaunchScreen.storyboard */; };
@@ -16,12 +15,12 @@
 		AC30F1721BA674C700445878 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F1711BA674C700445878 /* NewsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		AC30F1741BA679E400445878 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F1731BA679E400445878 /* MenuTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC30F1761BA67A5700445878 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F1751BA67A5700445878 /* MenuTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		AC549F161BA93E120015A147 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC549F151BA93E120015A147 /* MenuTransitionManager.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC30F15A1BA66A1100445878 /* SlideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC30F15D1BA66A1100445878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC30F15F1BA66A1100445878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC30F1621BA66A1100445878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC30F1641BA66A1100445878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC30F1671BA66A1100445878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		AC30F1711BA674C700445878 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		AC30F1731BA679E400445878 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		AC30F1751BA67A5700445878 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		AC549F151BA93E120015A147 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				AC30F15D1BA66A1100445878 /* AppDelegate.swift */,
-				AC30F15F1BA66A1100445878 /* ViewController.swift */,
+				AC549F151BA93E120015A147 /* MenuTransitionManager.swift */,
 				AC30F16F1BA6745600445878 /* NewsTableViewController.swift */,
 				AC30F1711BA674C700445878 /* NewsTableViewCell.swift */,
 				AC30F1731BA679E400445878 /* MenuTableViewController.swift */,
@@ -147,8 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC30F1601BA66A1100445878 /* ViewController.swift in Sources */,
 				AC30F15E1BA66A1100445878 /* AppDelegate.swift in Sources */,
+				AC549F161BA93E120015A147 /* MenuTransitionManager.swift in Sources */,
 				AC30F1761BA67A5700445878 /* MenuTableViewCell.swift in Sources */,
 				AC30F1741BA679E400445878 /* MenuTableViewController.swift in Sources */,
 				AC30F1721BA674C700445878 /* NewsTableViewCell.swift in Sources */,
@@ -300,6 +300,7 @@
 				AC30F16E1BA66A1100445878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
