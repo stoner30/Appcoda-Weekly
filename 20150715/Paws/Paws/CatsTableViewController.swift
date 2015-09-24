@@ -72,6 +72,25 @@ class CatsTableViewController: PFQueryTableViewController {
             if let credit = pfObject["cc_by"] as? String {
                 cell?.catCreditLabel.text = "\(credit) / CC 2.0"
             }
+            
+            // 为什么加这句？
+            cell?.catImageView.image = nil
+            
+            if let urlString = pfObject["url"] as? String {
+                if let url = NSURL(string: urlString) {
+                    let request = NSURLRequest(URL: url, cachePolicy: .ReturnCacheDataElseLoad, timeoutInterval: 5.0)
+                    
+                    NSOperationQueue.mainQueue().cancelAllOperations()
+                    
+                    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: { (response: NSURLResponse?, image: NSData?, error: NSError?) -> Void in
+                        if let err: NSError = error {
+                            print(err.localizedDescription)
+                        } else if let data = image {
+                            cell?.catImageView.image = UIImage(data: data)
+                        }
+                    })
+                }
+            }
         }
         
         return cell

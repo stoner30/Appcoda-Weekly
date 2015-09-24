@@ -48,17 +48,26 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paw" translatesAutoresizingMaskIntoConstraints="NO" id="Yv1-1z-cSh">
+                        <rect key="frame" x="110" y="110" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="lyW-B7-PjS"/>
+                            <constraint firstAttribute="width" constant="100" id="nyI-3S-4fL"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="XP1-9K-bSD" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0cO-O2-79E"/>
                     <constraint firstItem="XP1-9K-bSD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="9Ev-I6-Dem"/>
                     <constraint firstAttribute="trailingMargin" secondItem="XP1-9K-bSD" secondAttribute="trailing" constant="7" id="Mxf-hJ-avO"/>
                     <constraint firstAttribute="bottomMargin" secondItem="i0I-V7-Jii" secondAttribute="bottom" constant="3.5" id="WE8-gi-NEn"/>
+                    <constraint firstItem="Yv1-1z-cSh" firstAttribute="centerX" secondItem="XP1-9K-bSD" secondAttribute="centerX" id="bRf-mH-y1n"/>
                     <constraint firstAttribute="bottomMargin" secondItem="hl1-0X-kS9" secondAttribute="bottom" constant="35.5" id="doN-Dz-Dsh"/>
                     <constraint firstItem="t5J-Zl-OMG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="17" id="eS0-ex-qHc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="hl1-0X-kS9" secondAttribute="trailing" constant="16" id="lBw-vj-eld"/>
                     <constraint firstAttribute="trailingMargin" secondItem="i0I-V7-Jii" secondAttribute="trailing" constant="18" id="mVo-JL-1dd"/>
                     <constraint firstItem="XP1-9K-bSD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="n5L-fo-Fh7"/>
+                    <constraint firstItem="Yv1-1z-cSh" firstAttribute="centerY" secondItem="XP1-9K-bSD" secondAttribute="centerY" id="p5v-R3-b0Y"/>
                     <constraint firstAttribute="bottomMargin" secondItem="t5J-Zl-OMG" secondAttribute="bottom" constant="3.5" id="yWX-mb-6rb"/>
                 </constraints>
             </tableViewCellContentView>
@@ -66,8 +75,12 @@
                 <outlet property="catCreditLabel" destination="hl1-0X-kS9" id="pl5-bo-NdX"/>
                 <outlet property="catImageView" destination="XP1-9K-bSD" id="qAk-OG-6bh"/>
                 <outlet property="catNameLabel" destination="t5J-Zl-OMG" id="P3A-gP-VtG"/>
+                <outlet property="catPawIcon" destination="Yv1-1z-cSh" id="hUy-qT-UUk"/>
                 <outlet property="catVotesLabel" destination="i0I-V7-Jii" id="jB4-TX-eBU"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="paw" width="100" height="100"/>
+    </resources>
 </document>
