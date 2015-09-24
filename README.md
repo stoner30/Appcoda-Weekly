@@ -11,5 +11,7 @@
     * **QRReaderDemo**: 如何使用AVFoundation进行QR Code扫描
 * **`20150705`**
     * **SlideMenu**: 建立一个像Medium App的下滑选单
+* **`20150715`** 
+    * **Paws**: 以Parse与Swift构建一个想Instagram一样的App
 * **`20150903`**
     * **CustomSegues**: 如何使用自定Segue实现视图转场动画
