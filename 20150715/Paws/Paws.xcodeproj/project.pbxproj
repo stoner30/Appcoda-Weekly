@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52A015878FFF18FA90CB8F5C /* libPods-Paws.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 007EA018E32D78609F13852F /* libPods-Paws.a */; };
+		15E474337FAD44C324487C3E /* libPods-Paws.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C306FB29DFF32C0BCE369C9C /* libPods-Paws.a */; };
 		AC91B4861BAA45CF00E00A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC91B4851BAA45CF00E00A78 /* AppDelegate.swift */; };
 		AC91B48D1BAA45CF00E00A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC91B48C1BAA45CF00E00A78 /* Assets.xcassets */; };
 		AC91B4901BAA45CF00E00A78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC91B48E1BAA45CF00E00A78 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		007EA018E32D78609F13852F /* libPods-Paws.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Paws.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9FEE98FA63960CC988443F /* Pods-Paws.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paws.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paws/Pods-Paws.debug.xcconfig"; sourceTree = "<group>"; };
 		41314644552F6641F21E7F96 /* Pods-Paws.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paws.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paws/Pods-Paws.release.xcconfig"; sourceTree = "<group>"; };
 		AC91B4821BAA45CF00E00A78 /* Paws.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paws.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +28,7 @@
 		ACA4C9C31BB3DEFA00EC6557 /* CatsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsTableViewController.swift; sourceTree = "<group>"; };
 		ACA4C9C51BB3E90700EC6557 /* CatsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsTableViewCell.swift; sourceTree = "<group>"; };
 		ACA4C9C61BB3E90700EC6557 /* CatsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatsTableViewCell.xib; sourceTree = "<group>"; };
+		C306FB29DFF32C0BCE369C9C /* libPods-Paws.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Paws.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52A015878FFF18FA90CB8F5C /* libPods-Paws.a in Frameworks */,
+				15E474337FAD44C324487C3E /* libPods-Paws.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +46,7 @@
 		88BAFCB30741F35C3AADAFF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				007EA018E32D78609F13852F /* libPods-Paws.a */,
+				C306FB29DFF32C0BCE369C9C /* libPods-Paws.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
