@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC6165F81BB5221F002FC085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6165F71BB5221F002FC085 /* AppDelegate.swift */; };
+		AC6165FD1BB5221F002FC085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6165FB1BB5221F002FC085 /* Main.storyboard */; };
+		AC6165FF1BB5221F002FC085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6165FE1BB5221F002FC085 /* Assets.xcassets */; };
+		AC6166021BB5221F002FC085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6166001BB5221F002FC085 /* LaunchScreen.storyboard */; };
+		AC61660A1BB522C2002FC085 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6166091BB522C2002FC085 /* BarChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC61660C1BB522CC002FC085 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61660B1BB522CC002FC085 /* ChartsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D4F8D7BA6B7F4E2B6CB2A67E /* Pods_iOSChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D70EE20D23E7A316C86C38 /* Pods_iOSChartsDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55D70EE20D23E7A316C86C38 /* Pods_iOSChartsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSChartsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6165F41BB5221F002FC085 /* iOSChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6165F71BB5221F002FC085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC6165FC1BB5221F002FC085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC6165FE1BB5221F002FC085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC6166011BB5221F002FC085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC6166031BB5221F002FC085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC6166091BB522C2002FC085 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		AC61660B1BB522CC002FC085 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		CAE22E9B23F44AC46A968859 /* Pods-iOSChartsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChartsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChartsDemo/Pods-iOSChartsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D23E6DD4628FCAF1C5475D68 /* Pods-iOSChartsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChartsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChartsDemo/Pods-iOSChartsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC6165F11BB5221F002FC085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F8D7BA6B7F4E2B6CB2A67E /* Pods_iOSChartsDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07BBF22F2608A70E630C479E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55D70EE20D23E7A316C86C38 /* Pods_iOSChartsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		466A9395E2BF26750691E8EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D23E6DD4628FCAF1C5475D68 /* Pods-iOSChartsDemo.debug.xcconfig */,
+				CAE22E9B23F44AC46A968859 /* Pods-iOSChartsDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC6165EB1BB5221F002FC085 = {
+			isa = PBXGroup;
+			children = (
+				AC6165F61BB5221F002FC085 /* iOSChartsDemo */,
+				AC6165F51BB5221F002FC085 /* Products */,
+				466A9395E2BF26750691E8EE /* Pods */,
+				07BBF22F2608A70E630C479E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC6165F51BB5221F002FC085 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC6165F41BB5221F002FC085 /* iOSChartsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC6165F61BB5221F002FC085 /* iOSChartsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AC6165F71BB5221F002FC085 /* AppDelegate.swift */,
+				AC6166091BB522C2002FC085 /* BarChartViewController.swift */,
+				AC61660B1BB522CC002FC085 /* ChartsViewController.swift */,
+				AC6165FB1BB5221F002FC085 /* Main.storyboard */,
+				AC6165FE1BB5221F002FC085 /* Assets.xcassets */,
+				AC6166001BB5221F002FC085 /* LaunchScreen.storyboard */,
+				AC6166031BB5221F002FC085 /* Info.plist */,
+			);
+			path = iOSChartsDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC6165F31BB5221F002FC085 /* iOSChartsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6166061BB5221F002FC085 /* Build configuration list for PBXNativeTarget "iOSChartsDemo" */;
+			buildPhases = (
+				4E92AF54262B9C106C17DCEE /* Check Pods Manifest.lock */,
+				AC6165F01BB5221F002FC085 /* Sources */,
+				AC6165F11BB5221F002FC085 /* Frameworks */,
+				AC6165F21BB5221F002FC085 /* Resources */,
+				F0F43F7F69560444B5C0A66C /* Embed Pods Frameworks */,
+				F094A52D4669193F028DD713 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSChartsDemo;
+			productName = iOSChartsDemo;
+			productReference = AC6165F41BB5221F002FC085 /* iOSChartsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC6165EC1BB5221F002FC085 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Stoner.Wong;
+				TargetAttributes = {
+					AC6165F31BB5221F002FC085 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = UFX22EDK7T;
+					};
+				};
+			};
+			buildConfigurationList = AC6165EF1BB5221F002FC085 /* Build configuration list for PBXProject "iOSChartsDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC6165EB1BB5221F002FC085;
+			productRefGroup = AC6165F51BB5221F002FC085 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC6165F31BB5221F002FC085 /* iOSChartsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC6165F21BB5221F002FC085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6166021BB5221F002FC085 /* LaunchScreen.storyboard in Resources */,
+				AC6165FF1BB5221F002FC085 /* Assets.xcassets in Resources */,
+				AC6165FD1BB5221F002FC085 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E92AF54262B9C106C17DCEE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F094A52D4669193F028DD713 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSChartsDemo/Pods-iOSChartsDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F43F7F69560444B5C0A66C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSChartsDemo/Pods-iOSChartsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC6165F01BB5221F002FC085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC61660C1BB522CC002FC085 /* ChartsViewController.swift in Sources */,
+				AC6165F81BB5221F002FC085 /* AppDelegate.swift in Sources */,
+				AC61660A1BB522C2002FC085 /* BarChartViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC6165FB1BB5221F002FC085 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC6165FC1BB5221F002FC085 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC6166001BB5221F002FC085 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC6166011BB5221F002FC085 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC6166041BB5221F002FC085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC6166051BB5221F002FC085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC6166071BB5221F002FC085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23E6DD4628FCAF1C5475D68 /* Pods-iOSChartsDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSChartsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw.iOSChartsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC6166081BB5221F002FC085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE22E9B23F44AC46A968859 /* Pods-iOSChartsDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSChartsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw.iOSChartsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC6165EF1BB5221F002FC085 /* Build configuration list for PBXProject "iOSChartsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6166041BB5221F002FC085 /* Debug */,
+				AC6166051BB5221F002FC085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC6166061BB5221F002FC085 /* Build configuration list for PBXNativeTarget "iOSChartsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6166071BB5221F002FC085 /* Debug */,
+				AC6166081BB5221F002FC085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC6165EC1BB5221F002FC085 /* Project object */;
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sna-Sg-gcF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="fAm-qS-T6z">
+            <objects>
+                <tableViewController id="nNb-gc-ABJ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JbY-O6-bAO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="On9-DI-qZ9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ady-Ke-YZ9" style="IBUITableViewCellStyleDefault" id="aLz-Er-1i5">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aLz-Er-1i5" id="coM-og-tRF">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Bar Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ady-Ke-YZ9">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="f75-d1-SYy" kind="push" id="e68-CR-S4a"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Tn0-gs-Sde" style="IBUITableViewCellStyleDefault" id="hMe-tJ-d2Z">
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hMe-tJ-d2Z" id="pMV-Gg-SQp">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Other Charts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tn0-gs-Sde">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="e8A-bi-OEg" kind="push" id="yVJ-k9-Dls"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="nNb-gc-ABJ" id="Oqw-5q-N6j"/>
+                            <outlet property="delegate" destination="nNb-gc-ABJ" id="VwC-SI-qX4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="aM3-ZC-w2a"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kql-SX-rjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="379"/>
+        </scene>
+        <!--Charts View Controller-->
+        <scene sceneID="Hgh-lu-Rz2">
+            <objects>
+                <viewController id="e8A-bi-OEg" customClass="ChartsViewController" customModule="iOSChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iro-pe-SOe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ivd-cm-wdn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3uk-Yr-41l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Ls-XN-u4V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMB-Gd-Cb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="727"/>
+        </scene>
+        <!--Bar Chart-->
+        <scene sceneID="oy9-Pf-SYp">
+            <objects>
+                <viewController id="f75-d1-SYy" customClass="BarChartViewController" customModule="iOSChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="970-6W-JM9"/>
+                        <viewControllerLayoutGuide type="bottom" id="c4y-Io-baL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Swd-dS-aDm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ZP-TI-U1B" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4ZP-TI-U1B" secondAttribute="trailing" constant="-16" id="2Xd-1h-PJm"/>
+                            <constraint firstItem="c4y-Io-baL" firstAttribute="top" secondItem="4ZP-TI-U1B" secondAttribute="bottom" id="WH8-FW-hQY"/>
+                            <constraint firstItem="4ZP-TI-U1B" firstAttribute="top" secondItem="970-6W-JM9" secondAttribute="bottom" id="dPX-oq-Sa7"/>
+                            <constraint firstItem="4ZP-TI-U1B" firstAttribute="leading" secondItem="Swd-dS-aDm" secondAttribute="leadingMargin" constant="-16" id="plw-RG-MNs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bar Chart" id="321-k8-J4t">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="NGo-8k-UIp">
+                            <connections>
+                                <action selector="saveChart:" destination="f75-d1-SYy" id="wsy-uA-Hth"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="barChartView" destination="4ZP-TI-U1B" id="K4X-rS-v7C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxA-6a-RWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="46"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zwF-en-cMf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sna-Sg-gcF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OYk-LP-7qO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nNb-gc-ABJ" kind="relationship" relationship="rootViewController" id="7uy-qt-WUV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXH-Pp-NxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="379"/>
+        </scene>
+    </scenes>
+</document>
