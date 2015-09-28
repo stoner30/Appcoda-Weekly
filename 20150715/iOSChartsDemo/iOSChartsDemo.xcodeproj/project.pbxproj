@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC5F6D031BB8E23A00DF2DDE /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F6D021BB8E23A00DF2DDE /* ChartsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6165F81BB5221F002FC085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6165F71BB5221F002FC085 /* AppDelegate.swift */; };
 		AC6165FD1BB5221F002FC085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6165FB1BB5221F002FC085 /* Main.storyboard */; };
 		AC6165FF1BB5221F002FC085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6165FE1BB5221F002FC085 /* Assets.xcassets */; };
 		AC6166021BB5221F002FC085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6166001BB5221F002FC085 /* LaunchScreen.storyboard */; };
 		AC61660A1BB522C2002FC085 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6166091BB522C2002FC085 /* BarChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		AC61660C1BB522CC002FC085 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61660B1BB522CC002FC085 /* ChartsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D4F8D7BA6B7F4E2B6CB2A67E /* Pods_iOSChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D70EE20D23E7A316C86C38 /* Pods_iOSChartsDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55D70EE20D23E7A316C86C38 /* Pods_iOSChartsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSChartsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5F6D021BB8E23A00DF2DDE /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		AC6165F41BB5221F002FC085 /* iOSChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6165F71BB5221F002FC085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC6165FC1BB5221F002FC085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		AC6166011BB5221F002FC085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC6166031BB5221F002FC085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC6166091BB522C2002FC085 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
-		AC61660B1BB522CC002FC085 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		CAE22E9B23F44AC46A968859 /* Pods-iOSChartsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChartsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChartsDemo/Pods-iOSChartsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D23E6DD4628FCAF1C5475D68 /* Pods-iOSChartsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSChartsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSChartsDemo/Pods-iOSChartsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +82,7 @@
 			children = (
 				AC6165F71BB5221F002FC085 /* AppDelegate.swift */,
 				AC6166091BB522C2002FC085 /* BarChartViewController.swift */,
-				AC61660B1BB522CC002FC085 /* ChartsViewController.swift */,
+				AC5F6D021BB8E23A00DF2DDE /* ChartsViewController.swift */,
 				AC6165FB1BB5221F002FC085 /* Main.storyboard */,
 				AC6165FE1BB5221F002FC085 /* Assets.xcassets */,
 				AC6166001BB5221F002FC085 /* LaunchScreen.storyboard */,
@@ -213,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC61660C1BB522CC002FC085 /* ChartsViewController.swift in Sources */,
+				AC5F6D031BB8E23A00DF2DDE /* ChartsViewController.swift in Sources */,
 				AC6165F81BB5221F002FC085 /* AppDelegate.swift in Sources */,
 				AC61660A1BB522C2002FC085 /* BarChartViewController.swift in Sources */,
 			);

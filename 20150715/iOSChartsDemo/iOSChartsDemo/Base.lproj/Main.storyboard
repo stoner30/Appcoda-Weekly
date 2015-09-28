@@ -27,7 +27,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -47,7 +47,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -81,15 +81,39 @@
                     <view key="view" contentMode="scaleToFill" id="3uk-Yr-41l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wnp-p2-ycb" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="320" height="244"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXm-y6-jOg" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="324" width="320" height="244"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JXm-y6-jOg" firstAttribute="height" secondItem="Wnp-p2-ycb" secondAttribute="height" id="6co-tg-wBz"/>
+                            <constraint firstItem="Wnp-p2-ycb" firstAttribute="top" secondItem="Iro-pe-SOe" secondAttribute="bottom" id="OKe-4z-IEQ"/>
+                            <constraint firstItem="Ivd-cm-wdn" firstAttribute="top" secondItem="JXm-y6-jOg" secondAttribute="bottom" id="TVK-pg-5sw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wnp-p2-ycb" secondAttribute="trailing" constant="-16" id="WoR-gN-7pK"/>
+                            <constraint firstItem="Wnp-p2-ycb" firstAttribute="leading" secondItem="3uk-Yr-41l" secondAttribute="leadingMargin" constant="-16" id="XNi-Pa-NyS"/>
+                            <constraint firstItem="JXm-y6-jOg" firstAttribute="leading" secondItem="3uk-Yr-41l" secondAttribute="leadingMargin" constant="-16" id="mLO-10-B7Y"/>
+                            <constraint firstItem="JXm-y6-jOg" firstAttribute="top" secondItem="Wnp-p2-ycb" secondAttribute="bottom" constant="16" id="rYY-pe-xgn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JXm-y6-jOg" secondAttribute="trailing" constant="-16" id="rc5-9W-43B"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3Ls-XN-u4V"/>
+                    <connections>
+                        <outlet property="lineChartView" destination="Wnp-p2-ycb" id="5n3-xM-zGj"/>
+                        <outlet property="pieChartView" destination="JXm-y6-jOg" id="dfi-0T-kT8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMB-Gd-Cb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1219" y="727"/>
         </scene>
-        <!--Bar Chart-->
+        <!--Bar Chart View Controller-->
         <scene sceneID="oy9-Pf-SYp">
             <objects>
                 <viewController id="f75-d1-SYy" customClass="BarChartViewController" customModule="iOSChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,7 +138,7 @@
                             <constraint firstItem="4ZP-TI-U1B" firstAttribute="leading" secondItem="Swd-dS-aDm" secondAttribute="leadingMargin" constant="-16" id="plw-RG-MNs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Bar Chart" id="321-k8-J4t">
+                    <navigationItem key="navigationItem" id="321-k8-J4t">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="NGo-8k-UIp">
                             <connections>
                                 <action selector="saveChart:" destination="f75-d1-SYy" id="wsy-uA-Hth"/>
