@@ -18,6 +18,9 @@
   以Parse与Swift构建一个想Instagram一样的App  
   _有件事搞不明白，难道说在使用CocoaPods管理第三方库的时候，Objective-C库和Swift库不可同时引用？貌似在Podfile中写入use\_frameworks!后，Objective-C库就会出现问题，而use\_frameworks!又是使用Swift库必写的配置，究竟要怎么办呢？_
   
+* **PullRefresh**:  
+  Swfit教学：如何加入自定的下拉更新元件（Pull to Refresh） 
+  
 * **QRReaderDemo**:  
   如何使用AVFoundation进行QR Code扫描
   

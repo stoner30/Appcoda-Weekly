@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5O8-yV-2kT">
+                    <rect key="frame" x="290" y="15" width="20" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Aoz-qh-gMG"/>
+                        <constraint firstAttribute="height" constant="30" id="O9G-9f-bV0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAX-x4-0Kk">
+                    <rect key="frame" x="262" y="15" width="20" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="iPR-ev-umj"/>
+                        <constraint firstAttribute="width" constant="20" id="s9m-z9-bcg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxf-xl-1fT">
+                    <rect key="frame" x="318" y="15" width="20" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="73b-1g-ay2"/>
+                        <constraint firstAttribute="height" constant="30" id="wBe-xT-YZr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b93-1R-0PE">
+                    <rect key="frame" x="346" y="15" width="20" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="gkn-Zb-JRI"/>
+                        <constraint firstAttribute="height" constant="30" id="tRO-ED-WXm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXF-65-bGp">
+                    <rect key="frame" x="234" y="15" width="20" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GpT-oy-KiW"/>
+                        <constraint firstAttribute="width" constant="20" id="lnV-R8-2VK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPY-1w-clu">
+                    <rect key="frame" x="206" y="15" width="20" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ivr-yU-t0E"/>
+                        <constraint firstAttribute="width" constant="20" id="c4c-J1-ET3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXg-J8-8g2">
+                    <rect key="frame" x="374" y="15" width="20" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="aJ0-yH-yFF"/>
+                        <constraint firstAttribute="width" constant="20" id="uKG-DA-ymK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.9295991063117981" green="0.93991154432296753" blue="0.95041066408157349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jPY-1w-clu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="268-Ka-nhH"/>
+                <constraint firstItem="KXg-J8-8g2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3sQ-WL-0D9"/>
+                <constraint firstItem="Lxf-xl-1fT" firstAttribute="leading" secondItem="5O8-yV-2kT" secondAttribute="trailing" constant="8" id="7Og-uW-rBk"/>
+                <constraint firstItem="KXg-J8-8g2" firstAttribute="leading" secondItem="b93-1R-0PE" secondAttribute="trailing" constant="8" id="DFg-iE-aJ1"/>
+                <constraint firstItem="b93-1R-0PE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="HNa-Q1-m91"/>
+                <constraint firstItem="NXF-65-bGp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LcU-LY-Ex4"/>
+                <constraint firstItem="5O8-yV-2kT" firstAttribute="leading" secondItem="gAX-x4-0Kk" secondAttribute="trailing" constant="8" id="adH-BJ-apZ"/>
+                <constraint firstItem="5O8-yV-2kT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cbV-4h-Jlm"/>
+                <constraint firstItem="gAX-x4-0Kk" firstAttribute="leading" secondItem="NXF-65-bGp" secondAttribute="trailing" constant="8" id="gnc-QE-pFG"/>
+                <constraint firstItem="gAX-x4-0Kk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iPt-KZ-rgz"/>
+                <constraint firstItem="b93-1R-0PE" firstAttribute="leading" secondItem="Lxf-xl-1fT" secondAttribute="trailing" constant="8" id="iTP-cJ-0vV"/>
+                <constraint firstItem="Lxf-xl-1fT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jlr-b8-6zT"/>
+                <constraint firstItem="NXF-65-bGp" firstAttribute="leading" secondItem="jPY-1w-clu" secondAttribute="trailing" constant="8" id="oJO-1A-2I3"/>
+                <constraint firstItem="5O8-yV-2kT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vvY-YO-tZM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
