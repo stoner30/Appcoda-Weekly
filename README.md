@@ -24,6 +24,9 @@
 * **SlideMenu**:  
   建立一个像Medium App的下滑选单
   
+* **SlotMachine**:  
+  旋转吧！使用UIPickerView元件与Emoji绘文字打造拉霸机App
+  
 * **StackViewDemo**:  
   iOS9新功能：堆叠视图介绍（Stack Views）
   

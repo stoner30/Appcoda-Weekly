@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlotMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yo3-BO-nYF">
+                                <rect key="frame" x="20" y="20" width="560" height="216"/>
+                                <animations/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L01-xr-1vP">
+                                <rect key="frame" x="284.5" y="286" width="31" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Spin"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1W-3d-cY4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg9-ci-oEL">
+                                <rect key="frame" x="20" y="529.5" width="560" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L01-xr-1vP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8WB-8J-IVz"/>
+                            <constraint firstItem="yo3-BO-nYF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HpC-QY-R43"/>
+                            <constraint firstItem="L01-xr-1vP" firstAttribute="top" secondItem="yo3-BO-nYF" secondAttribute="bottom" constant="50" id="OOX-5V-A2S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vg9-ci-oEL" secondAttribute="trailing" id="Zqb-uh-tKO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vg9-ci-oEL" secondAttribute="bottom" constant="50" id="h5A-0P-n1z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yo3-BO-nYF" secondAttribute="trailing" id="mwO-M3-iel"/>
+                            <constraint firstItem="Vg9-ci-oEL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nih-4t-irH"/>
+                            <constraint firstItem="yo3-BO-nYF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uTk-Hd-ZfR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="yo3-BO-nYF" id="4UB-Aj-a6I"/>
+                        <outlet property="resultLabel" destination="Vg9-ci-oEL" id="Qgc-Wg-Vxi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
