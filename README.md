@@ -21,6 +21,9 @@
 * **PullRefresh**:  
   Swfit教学：如何加入自定的下拉更新元件（Pull to Refresh） 
   
+* **QRCodeGen**:  
+  QR Code产生器App：以Core Image滤波器制作QR Code条码
+  
 * **QRReaderDemo**:  
   如何使用AVFoundation进行QR Code扫描
   
