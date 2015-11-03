@@ -24,6 +24,9 @@
 * **QRReaderDemo**:  
   如何使用AVFoundation进行QR Code扫描
   
+* **RainbowDemo**:  
+  利用@IBDesignable和@IBInspectable建立自定义元件
+  
 * **SlideMenu**:  
   建立一个像Medium App的下滑选单
   
